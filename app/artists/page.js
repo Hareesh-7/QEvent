@@ -5,7 +5,7 @@ export default async function ArtistsPage(){
     const artists= await response.json()
     return (
         
-        <div className="flex flex-wrap text-center justify-between">
+        <div className="flex flex-wrap text-center justify-evenly">
             {
                 artists.map(artist=>{
                     return (

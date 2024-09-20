@@ -13,7 +13,7 @@ async function EventsComponent() {
         events = events.filter(event => event.tags.includes(searchParam.get('tag')));
 
     return (
-        <div className="flex flex-row gap-x-2 gap-y-2 px-3 py-3 flex-wrap justify-evenly">
+        <div className="flex flex-row flex-wrap justify-evenly">
             {events.map(event => (<EventCard eventData={event} />))}
         </div>
     )
