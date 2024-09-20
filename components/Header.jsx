@@ -77,15 +77,15 @@ const Header = () => {
 
           {session ? (
             <button
-              onClick={() => {}}
-              className=" bg-gradient-to-r from-orange-400 to-teal-600 text-white px-4 py-2 rounded-md font-medium hover:opacity-70"
+            onClick={() => signOut()}
+            className=" bg-gradient-to-r from-orange-400 to-teal-600 text-white px-4 py-2 rounded-md font-medium hover:opacity-70"
             >
               Logout
             </button>
           ) : null}
           {!session ? (
             <button
-              onClick={() => {}}
+              onClick={() => signIn()}
               className=" bg-gradient-to-r from-orange-400 to-teal-600 text-white px-4 py-2 rounded-md font-medium hover:opacity-70"
             >
               Log in
